@@ -9,7 +9,13 @@ function google(varargin)
 %
 %           GOOGLE How to use google
 %
+%
+% -------------------------------------------------------------------------
+% If you want to contribute to improve the function or if you find any bug
+% please raise an issue at <a href="matlab:web('https://github.com/LRondina/Google-for-MATLAB','-browser')">LRondina/Google-for-MATLAB</a> repository on GitHub
+%
 % © 2018 Luca Rondina (<a href="matlab:web('https://github.com/LRondina','-browser')">GitHub</a>)
+% -------------------------------------------------------------------------
 
 
 query = [];
