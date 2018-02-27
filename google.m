@@ -7,8 +7,12 @@ function google(varargin)
 %   For example if you want to search for 'how to use google' just type the
 %   following in the MATLAB command window:
 %
-%           GOOGLE How to use google
+%           GOOGLE How to use google [-l | --lucky]
 %
+% OPTIONS:
+%   -l
+%   --lucky
+%     Append to the end of query to trigger the "I'm Feeling Lucky" option 
 %
 % -------------------------------------------------------------------------
 % If you want to contribute to improve the function or if you find any bug
@@ -27,7 +31,17 @@ for ii=1:nargin
     end
 end
 
-web(['www.google.com/search?q=' query],'-browser')
+if nargin<1
+    web(['www.google.com/search?q=' query],'-browser')
+else
+    if ~(strcmp('-l',varargin{end}) || strcmp('--lucky',varargin{end}))
+        web(['www.google.com/search?q=' query],'-browser')
+    else
+        trim = length(varargin{end});
+        query = query(1:end-(trim+1));
+        web(['www.google.com/search?q=' query '&btnI=I'],'-browser')
+    end
+end
 
 end
 
