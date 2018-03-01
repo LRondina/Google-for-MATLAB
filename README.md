@@ -17,9 +17,19 @@ google How to cook the perfect carbonara
 ```
 and your default browser will pop up with the results of the search.
 
+### I'm Feeling Lucky :four_leaf_clover:
+You can use the "I'm Feeling Lucky" option as well. At the end of your query just append `-l` or `--lucky`:
+
+```matlab
+google github -l
+google matlab --lucky
+```
+
 ### Installation :floppy_disk:
 Just clone (or fork) this repo and add it to the PATH on MATLAB.
 
 ### Contribute :pray:
 Please contribute to improve the function (or if you find any bug) by raising an issue here on GitHub.
+
+If you want:  [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/LRondina)
 
